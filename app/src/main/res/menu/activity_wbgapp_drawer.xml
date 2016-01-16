@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_news"
-            android:title="Newsfeed" />
+            android:title="@string/newsfeed_title" />
         <item
             android:id="@+id/nav_settings"
             android:title="Settings" />

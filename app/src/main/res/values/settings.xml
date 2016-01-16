@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <integer name="news_bulk">
+        10
+    </integer>
+
+    <bool name="news_load_images">
+        false
+    </bool>
+    <bool name="news_load_videos">
+        false
+    </bool>
+
+</resources>
