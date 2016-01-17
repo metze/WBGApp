@@ -1,5 +1,10 @@
 package com.wbgapp.webteam.wbgapp.database;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
@@ -9,11 +14,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.net.ssl.HttpsURLConnection;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 /**
  * Created by Deathlymad on 16.01.2016.
@@ -38,8 +40,9 @@ public class HTTPLoginHandler {
             return getFormParams( user, password);
         } catch(Exception e)
         {
-            System.out.print(e.getStackTrace());
+            e.printStackTrace();
         }
+        return false;
     }
 
     public String getPageContent() throws Exception {
@@ -81,7 +84,7 @@ public class HTTPLoginHandler {
         return response.toString();
     }
 
-    private void getFormParams( String user, String password) throws Exception {
+    private boolean getFormParams( String user, String password) throws Exception {
         System.out.println("Extracting form's data...");
 
         Document doc = Jsoup.parse(getPageContent());
@@ -155,5 +158,7 @@ public class HTTPLoginHandler {
             response.append(inputLine);
         }
         in.close();
+
+        return response.length() > 0; //needs better error catching
     }
 }
