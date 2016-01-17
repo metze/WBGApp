@@ -1,8 +1,6 @@
-package com.wbgapp.webteam.wbgapp;
+package com.wbgapp.webteam.wbgapp.structure;
 
 import java.util.ArrayList;
-
-import com.wbgapp.webteam.wbgapp.News;
 
 /**
  * Created by Deathlymad on 16.01.2016.

@@ -1,4 +1,4 @@
-package com.wbgapp.webteam.wbgapp;
+package com.wbgapp.webteam.wbgapp.structure;
 
 import com.wbgapp.webteam.wbgapp.database.HTTPLoginHandler;
 
@@ -13,12 +13,12 @@ public class Account {
     private String _name;
 
 
-    Account(String user)
+    public Account(String user)
     {
         _username = user;
     }
 
-    boolean login(String pw)
+    public boolean login(String pw)
     {
         HTTPLoginHandler handler = new HTTPLoginHandler("");
         try {
@@ -29,7 +29,7 @@ public class Account {
         return false;
     }
 
-    String getName()
+    public String getName()
     {
         return _name;
     }

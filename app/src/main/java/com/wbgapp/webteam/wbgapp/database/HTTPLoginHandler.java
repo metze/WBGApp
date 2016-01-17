@@ -122,7 +122,7 @@ public class HTTPLoginHandler {
         // Acts like a browser
         conn.setUseCaches(false);
         conn.setRequestMethod("POST");
-        conn.setRequestProperty("Host", "accounts.google.com");
+        conn.setRequestProperty("Host", "accounts.google.com"); //change
         conn.setRequestProperty("User-Agent", USER_AGENT);
         conn.setRequestProperty("Accept",
                 "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
@@ -131,7 +131,7 @@ public class HTTPLoginHandler {
             conn.addRequestProperty("Cookie", cookie.split(";", 1)[0]);
         }
         conn.setRequestProperty("Connection", "keep-alive");
-        conn.setRequestProperty("Referer", "https://accounts.google.com/ServiceLoginAuth");
+        conn.setRequestProperty("Referer", "https://accounts.google.com/ServiceLoginAuth");//change
         conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
         conn.setRequestProperty("Content-Length", Integer.toString(result.length()));
 

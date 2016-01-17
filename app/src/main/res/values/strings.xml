@@ -1,11 +1,21 @@
 <resources>
     <string name="app_name">WBGApp</string>
 
-    NewsFeed
+    Nav Titles
     <string name="newsfeed_title">Newsfeed</string>
+    <string name="substitute_title">Substitute Plan</string>
+
+    <string name="forum_section_title">Forum</string>
+    <string name="forum_notification_title">Notifications</string>
+
+    <string name="settings_section_title">Settings</string>
+    <string name="settings_general_title">General</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+
+    <string name="registration_title">Log In</string>
+    <string name="settings_registration_desc">Melde dich hier mit deiner E-Mail an damit der App gesicherte Inhalte freischalten kann.</string>
+
 </resources>

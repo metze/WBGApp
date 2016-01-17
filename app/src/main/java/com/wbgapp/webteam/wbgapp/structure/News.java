@@ -1,4 +1,4 @@
-package com.wbgapp.webteam.wbgapp;
+package com.wbgapp.webteam.wbgapp.structure;
 
 import android.view.View;
 

@@ -2,21 +2,30 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_news"
             android:title="@string/newsfeed_title" />
+
         <item
-            android:id="@+id/nav_settings"
-            android:title="Settings" />
+            android:id="@+id/nav_substitute"
+            android:title="@string/substitute_title" />
+
+        <item android:title="@string/forum_section_title">
+            <menu>
+                <item
+                    android:id="@+id/nav_send"
+                    android:title="@string/forum_notification_title" />
+            </menu>
+        </item>
+
+        <item android:title="@string/settings_section_title">
+            <menu>
+                <item
+                    android:id="@+id/nav_settings"
+                    android:title="@string/settings_general_title" />
+            </menu>
+        </item>
     </group>
-
-
-    <item android:title="Forum">
-        <menu>
-            <item
-                android:id="@+id/nav_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>
